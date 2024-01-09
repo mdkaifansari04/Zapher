@@ -11,3 +11,7 @@ export const CommentSchema = z.object({
     .string()
     .min(1, { message: "Comment be at least of 3 characters." }),
 });
+
+export const SearchSchema = z.object({
+  thread: z.string(),
+});

@@ -4,8 +4,10 @@ const communitySchema = new mongoose.Schema({
   id: {
     type: String,
     required: true,
+    unique: true,
   },
   name: { type: String, required: true },
+  username: { type: String, default: "@thread-org" },
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
@@ -18,12 +20,13 @@ const communitySchema = new mongoose.Schema({
       ref: "User",
     },
   ],
+  threads: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Thread",
+    },
+  ],
   createdAt: { type: Date, default: Date.now() },
-  onBoarded: {
-    type: Boolean,
-    required: true,
-    default: false,
-  },
 });
 
 const Community =

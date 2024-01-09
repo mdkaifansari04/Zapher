@@ -53,6 +53,7 @@ interface getUserTypeProps {
   pageSize?: number;
   userId?: string;
   orderBy?: SortOrder;
+  path?: string;
 }
 
 export const fetchUsers = async ({
@@ -61,9 +62,11 @@ export const fetchUsers = async ({
   pageNo = 1,
   pageSize = 30,
   orderBy = "desc",
+  path,
 }: getUserTypeProps) => {
   try {
     await connectToDb();
+    console.log(queryString);
 
     const regex = new RegExp(queryString, "i");
     const query: FilterQuery<typeof User> = {
@@ -88,6 +91,10 @@ export const fetchUsers = async ({
     const users = await userQuery.exec();
     const totalUserCount = await User.countDocuments(query);
     const isNext = totalUserCount > skipAmount + users.length;
+
+    if (path) revalidatePath(path);
+
+    console.log("Users: " + users);
 
     return { users, isNext };
   } catch (error: any) {

@@ -3,19 +3,21 @@ import { revalidatePath } from "next/cache";
 import { connectToDb } from "../../utils/mongoose";
 import Thread from "../model/thread.model";
 import User from "../model/user.model";
-import { fetchUserById } from "./user.actions";
+import Community from "../model/community.model";
 
 interface ThreadProp {
   text: string;
   userId: string;
   parentId?: string;
   path: string;
+  communityId: any;
 }
 export const createThread = async ({
   text,
   userId,
   parentId,
   path,
+  communityId,
 }: ThreadProp) => {
   try {
     await connectToDb();
@@ -26,12 +28,22 @@ export const createThread = async ({
       text: text,
       author: user._id,
       parent: parentId || null,
+      community: communityId,
     });
-
     user.threads.push(newThread._id);
     await user.save();
-    revalidatePath(path);
 
+    console.log("comunity", communityId);
+
+    if (communityId) {
+      const updateCommunityInfo = await Community.findOne({ id: communityId });
+      if (!updateCommunityInfo) return console.log("Community not found");
+
+      updateCommunityInfo.threads.push(newThread._id);
+      updateCommunityInfo.save();
+    }
+
+    revalidatePath(path);
     console.log("Thread Created Successfully" + newThread);
   } catch (error: any) {
     console.log("Failed to create thread : " + error.message);

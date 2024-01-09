@@ -9,7 +9,6 @@ function RightSidebar() {
       <div className="flex flex-1 justify-start">
         <h1 className="text-2xl text-heading4-medium">Similar Minds</h1>
       </div>
-      <div className=""></div>
     </section>
   );
 }

@@ -18,6 +18,7 @@ import { Textarea } from "../ui/textarea";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { createThread } from "../../libs/actions/thread.actions";
+import { useOrganization } from "@clerk/nextjs";
 
 interface FormProps {
   user: {
@@ -34,7 +35,7 @@ function CreateThreadForm({ user }: FormProps) {
   const [disable, setIsDisable] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
-
+  const { organization, isLoaded } = useOrganization();
   const form = useForm({
     resolver: zodResolver(ThreadValidation),
     defaultValues: {
@@ -42,14 +43,20 @@ function CreateThreadForm({ user }: FormProps) {
     },
   });
 
+  console.log("org1", organization?.id);
   const onSubmit = async (value: z.infer<typeof ThreadValidation>) => {
     setIsDisable(true);
     form.reset();
-    await createThread({
-      text: value.thread,
-      userId: user._id,
-      path: pathname,
-    });
+    if (isLoaded) {
+      console.log("org2", organization?.id);
+      await createThread({
+        text: value.thread,
+        userId: user._id,
+        path: pathname,
+        communityId: organization ? organization?.id : null,
+      });
+    }
+
     router.push("/");
     setIsDisable(false);
   };
