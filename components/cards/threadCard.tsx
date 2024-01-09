@@ -35,7 +35,7 @@ function ThreadCard({
 }: CardProp) {
   return (
     <article
-      className={clx(`bg-dark-7 flex flex-row rounded-lg gap-x-3 `, {
+      className={clx(`bg-dark-7 flex flex-row rounded-xl gap-x-3`, {
         "bg-transparent px-5 py-0": isComment,
         "p-5": !isComment,
       })}
@@ -56,7 +56,9 @@ function ThreadCard({
           <h5 className="cursor-pointer text-base-semibold text-light-1">
             {author.name}
           </h5>
-          <p className="mt-2 text-small-regular text-light-2">{content}</p>
+          <p className="mt-2 text-small-regular text-light-2 tracking-tight leading-5">
+            {content}
+          </p>
           <div className={`${isComment && "mb-10"} mt-5 flex flex-col gap-3`}>
             <div className="flex gap-3.5">
               <FadeImg

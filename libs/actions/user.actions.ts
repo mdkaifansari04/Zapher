@@ -5,7 +5,6 @@ import { UserSchema } from "../../interface/schemaType";
 import { connectToDb } from "../../utils/mongoose";
 import User from "../model/user.model";
 import { FilterQuery, SortOrder } from "mongoose";
-import Thread from "../model/thread.model";
 
 export const updateUser = async (userData: UserSchema): Promise<void> => {
   try {
@@ -33,7 +32,7 @@ export const updateUser = async (userData: UserSchema): Promise<void> => {
   }
 };
 
-export const fetchUserById = async (userId: string | null) => {
+export const fetchUserById = async (userId: string) => {
   try {
     await connectToDb();
     const user = await User.findOne({ id: userId });
@@ -64,7 +63,7 @@ export const fetchUsers = async ({
   orderBy = "desc",
 }: getUserTypeProps) => {
   try {
-    connectToDb();
+    await connectToDb();
 
     const regex = new RegExp(queryString, "i");
     const query: FilterQuery<typeof User> = {
