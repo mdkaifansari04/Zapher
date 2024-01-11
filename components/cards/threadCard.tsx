@@ -84,9 +84,10 @@ function ThreadCard({
                         <FadeImg
                           key={index}
                           src={comment}
-                          className={clx(`w-7 h-7 rounded-full relative my-1`, {
-                            "left-2 shadow-sm": index === 0,
-                            "right-1 shadow-md": index !== 0,
+                          className={clx(`w-6 h-6 rounded-full relative my-1`, {
+                            "left-1 shadow-sm": index === 0,
+                            "right-1 shadow-md border border-dark-7":
+                              index !== 0,
                             "!left-0 !right-0": commentProfile.length === 1,
                           })}
                         />

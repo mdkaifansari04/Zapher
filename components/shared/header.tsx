@@ -6,7 +6,7 @@ async function Header() {
   return (
     <nav className="fixed z-50  md:relative bg-secondary-500 md:bg-transparent md:border-[#27272A] md:!border-b-[0.001px] flex min-w-full justify-between items-center py-4 md:py-5 px-7 shadow-sm">
       <div className="flex gap-2 items-center">
-        <FadeImg className="w-8 h-8" src="./assets/logo.svg" />
+        <FadeImg className="w-8 h-8" src="./logo.svg" />
         <span className="font-montserrat font-semibold leading-4">
           {APP_NAME}
         </span>
