@@ -21,17 +21,13 @@ import { createThread } from "../../libs/actions/thread.actions";
 import { useOrganization } from "@clerk/nextjs";
 
 interface FormProps {
-  user: {
-    _id: string;
-    objectId: string;
-    username: string;
-    name: string;
-    bio: string;
-    image: string;
-  };
+  id: string;
+  content?: string;
+  isDrawer?: boolean;
+  closer?: any;
 }
 
-function CreateThreadForm({ user }: FormProps) {
+function CreateThreadForm({ id, content, isDrawer, closer }: FormProps) {
   const [disable, setIsDisable] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
@@ -39,7 +35,7 @@ function CreateThreadForm({ user }: FormProps) {
   const form = useForm({
     resolver: zodResolver(ThreadValidation),
     defaultValues: {
-      thread: "",
+      thread: content ? content : "",
     },
   });
 
@@ -48,10 +44,9 @@ function CreateThreadForm({ user }: FormProps) {
     setIsDisable(true);
     form.reset();
     if (isLoaded) {
-      console.log("org2", organization?.id);
       await createThread({
         text: value.thread,
-        userId: user._id,
+        userId: id,
         path: pathname,
         communityId: organization ? organization?.id : null,
       });
@@ -63,18 +58,15 @@ function CreateThreadForm({ user }: FormProps) {
   return (
     <div className="my-10">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
           <FormField
             control={form.control}
             name="thread"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="leading-3 text-small-regular my-2">
-                  Content
-                </FormLabel>
                 <FormControl className="border-none text-dark-2 my-10">
                   <Textarea
-                    rows={12}
+                    rows={8}
                     className="no-focus p-5 text-small-regular bg-[#080A0D] text-light-1 !my-0 outline-none border-dark-2 border-[0.1px]"
                     placeholder=""
                     {...field}
@@ -84,6 +76,7 @@ function CreateThreadForm({ user }: FormProps) {
               </FormItem>
             )}
           />
+
           <Button
             className="font-montserrat text-base-semibold tracking-tight leading-4"
             disabled={disable}
@@ -92,6 +85,7 @@ function CreateThreadForm({ user }: FormProps) {
           >
             {disable ? "Posting..." : "Post Thread"}
           </Button>
+          {isDrawer && closer}
         </form>
       </Form>
     </div>

@@ -24,23 +24,20 @@ export const createThread = async ({
     const user = await User.findById(userId);
     if (!user) return console.log("User does not exists");
 
+    const community = await Community.findOne({ id: communityId });
+
     const newThread = await Thread.create({
       text: text,
       author: user._id,
       parent: parentId || null,
-      community: communityId,
+      community: community?._id || null,
     });
     user.threads.push(newThread._id);
     await user.save();
 
-    console.log("comunity", communityId);
-
-    if (communityId) {
-      const updateCommunityInfo = await Community.findOne({ id: communityId });
-      if (!updateCommunityInfo) return console.log("Community not found");
-
-      updateCommunityInfo.threads.push(newThread._id);
-      updateCommunityInfo.save();
+    if (communityId !== null) {
+      community.threads.push(newThread._id);
+      await community.save();
     }
 
     revalidatePath(path);
@@ -63,6 +60,11 @@ export const fetchAllThreads = async (currentPage = 1, pageSize = 10) => {
       .populate({
         path: "author",
         model: User,
+        select: "name image id",
+      })
+      .populate({
+        path: "community",
+        model: Community,
         select: "name image id",
       })
       .populate({
@@ -93,11 +95,11 @@ export const fetchThreadById = async (threadId: string) => {
         model: User,
         select: "_id id image name",
       })
-      // .populate({
-      //   path: "community",
-      //   model: Community,
-      //   select: "_id id name image",
-      // }) // Populate the community field with _id and name
+      .populate({
+        path: "community",
+        model: Community,
+        select: "_id id name image",
+      }) // Populate the community field with _id and name
       .populate({
         path: "children",
         populate: [
@@ -168,8 +170,7 @@ export const fetchUserThreads = async (userId: string) => {
   try {
     connectToDb();
     const user = await User.findOne({ id: userId });
-    if (!user) return;
-
+    if (!user) return console.log("User not found");
     const threads = await Thread.find({
       _id: { $in: user.threads },
       parent: { $in: [null, undefined] },
@@ -180,9 +181,20 @@ export const fetchUserThreads = async (userId: string) => {
         select: "name image id",
       })
       .populate({
+        path: "community",
+        model: Community,
+        select: "name image id",
+      })
+      .populate({
         path: "children",
         model: Thread,
+        populate: {
+          path: "author",
+          model: User,
+        },
       });
+    if (!threads) return console.log("Threads not found");
+
     return threads;
   } catch (error: any) {
     console.log("Error in fetching the user threads : " + error.message);
@@ -204,7 +216,7 @@ export const getActivity = async (userId: string) => {
   try {
     const userThreads = await Thread.find({ author: userId });
 
-    const commentIds = userThreads.reduce((acc, userThread) => {
+    let commentIds = userThreads.reduce((acc, userThread) => {
       return acc.concat(userThread.children);
     }, []);
 

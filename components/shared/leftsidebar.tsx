@@ -1,16 +1,18 @@
 import React from "react";
 import MenuItem from "../ui/MenuItem";
 import { sidebarLinks } from "../../constants";
-import { SignOutButton, SignedIn } from "@clerk/nextjs";
+import { SignOutButton, SignedIn, currentUser } from "@clerk/nextjs";
 import { FadeImg } from "../core/fadeImg";
 
-function LeftSidebar() {
+async function LeftSidebar() {
+  const user = await currentUser();
+
   return (
     <section className="hidden md:flex min-h-screen border-dark-5 px-4 py-6 !border-r-[0.001px] ">
       <div className="flex flex-col gap-y-4 justify-between">
         <div className="flex flex-col gap-y-3">
           {sidebarLinks.map((i, index) => (
-            <MenuItem key={index} {...i} />
+            <MenuItem key={index} userId={user?.id} {...i} />
           ))}
         </div>
         <div className="flex items-center">

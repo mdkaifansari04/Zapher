@@ -18,7 +18,7 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
   return (
     <article className="community-card">
       <div className="flex flex-wrap items-center gap-3">
-        <Link href={`/communities/${id}`} className="relative h-12 w-12">
+        <Link href={`/community/${id}`} className="relative h-12 w-12">
           <FadeImg
             src={imgUrl}
             alt="community_logo"
@@ -27,7 +27,7 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
         </Link>
 
         <div>
-          <Link href={`/communities/${id}`}>
+          <Link href={`/community/${id}`}>
             <h4 className="text-base-semibold text-light-1">{name}</h4>
           </Link>
           <p className="text-small-medium text-gray-1">@{username}</p>
@@ -37,7 +37,7 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
       <p className="mt-4 text-subtle-medium text-gray-1">{bio}</p>
 
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-        <Link href={`/communities/${id}`}>
+        <Link href={`/community/${id}`}>
           <Button
             className="font-montserrat text-base-semibold tracking-tight px-5 !mt-0 leading-4 rounded-full"
             size={"sm"}

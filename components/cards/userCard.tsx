@@ -10,6 +10,9 @@ interface UserCardTypeProps {
   userId: string;
   isProfile?: boolean;
   bio?: string;
+  cardType?: "User" | "Community";
+  className?: string;
+  isSidebar?: boolean;
 }
 
 const UserCard = ({
@@ -19,17 +22,27 @@ const UserCard = ({
   userId,
   isProfile,
   bio,
+  cardType,
+  className,
+  isSidebar,
 }: UserCardTypeProps) => {
   return (
     <article
       className={clx(
-        `user-card p-5 rounded-md transition-all duration-150 ease-in-out `,
+        `user-card p-4 md:p-5 rounded-md transition-all duration-150 ease-in-out `,
         {
           "!px-5 !py-3": !isProfile,
-        }
+        },
+        className
       )}
     >
-      <Link href={`/profile/${userId}`}>
+      <Link
+        href={
+          cardType === "Community"
+            ? `/community/${userId}`
+            : `/profile/${userId}`
+        }
+      >
         <div className="flex gap-3 cursor-pointer group">
           <FadeImg
             src={image}
@@ -52,22 +65,27 @@ const UserCard = ({
             </p>
           </div>
         </div>
-        <div className="mt-4">
-          <p className="text-light-1 text-base-medium">{bio}</p>
-        </div>
+        {isProfile && (
+          <div className="mt-4">
+            <p className="text-light-1 text-base-medium">{bio}</p>
+          </div>
+        )}
       </Link>
-
-      <div className={`${isProfile && "hidden"}`}>
-        <Link href={`/profile/${userId}`}>
-          <Button
-            className="font-montserrat text-base-semibold tracking-tight px-5 !mt-0 leading-4 rounded-full"
-            size={"sm"}
-            type="submit"
-          >
-            View
-          </Button>
-        </Link>
-      </div>
+      {!isSidebar && (
+        <div className={`${isProfile && "hidden"}`}>
+          <Link href={`/profile/${userId}`}>
+            <Button
+              className={clx(
+                "font-montserrat hidden md:block text-base-semibold tracking-tight px-5 !mt-0 leading-4 rounded-full"
+              )}
+              size={"sm"}
+              type="submit"
+            >
+              View
+            </Button>
+          </Link>
+        </div>
+      )}
     </article>
   );
 };

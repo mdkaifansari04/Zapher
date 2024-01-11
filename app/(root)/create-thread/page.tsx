@@ -3,10 +3,10 @@ import { currentUser } from "@clerk/nextjs";
 import { fetchUserById } from "../../../libs/actions/user.actions";
 import { redirect } from "next/navigation";
 
-async function page() {
+async function Page({ params }: { params: { content: string } }) {
   const user = await currentUser();
   if (!user) return redirect("/sign-in");
-  const userInfo = await fetchUserById(user && user.id);
+  const userInfo = await fetchUserById(user.id);
 
   if (!userInfo || !userInfo.onBoarded) {
     redirect("/onboarding");
@@ -15,9 +15,9 @@ async function page() {
   return (
     <section className="">
       <h1 className="text-heading2-bold font-montserrat">Create Thread</h1>
-      <CreateThreadForm user={userInfo} />
+      <CreateThreadForm id={userInfo._id} />
     </section>
   );
 }
 
-export default page;
+export default Page;

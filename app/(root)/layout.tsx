@@ -10,7 +10,7 @@ const montserrat = Montserrat({
   weight: ["400", "500"],
   variable: "--font-montserrat",
 });
-import "../styles/global.css";
+import "../../styles/global.css";
 import LeftSidebar from "../../components/shared/leftsidebar";
 import Bottombar from "../../components/shared/bottombar";
 import RightSidebar from "../../components/shared/rightsidebar";

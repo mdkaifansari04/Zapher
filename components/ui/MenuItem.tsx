@@ -7,13 +7,18 @@ function MenuItem({
   imgURL,
   label,
   route,
+  userId,
 }: {
   imgURL: string;
   label: string;
   route: string;
+  userId?: string;
 }) {
   const path = usePathname();
   const isActive = path === route;
+
+  if (route === "/profile") route = `/profile/${userId}`;
+
   return (
     <Link href={route}>
       <div

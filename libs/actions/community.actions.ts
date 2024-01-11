@@ -3,6 +3,7 @@ import { connectToDb } from "../../utils/mongoose";
 import Community from "../model/community.model";
 import User from "../model/user.model";
 import { revalidatePath } from "next/cache";
+import Thread from "../model/thread.model";
 
 export const createCommunity = async (
   id: string,
@@ -113,15 +114,17 @@ export const updateCommunityInfo = async (
     if (!community)
       return NextResponse.json({ message: "Community not found" });
 
-    await Community.findByIdAndUpdate(
+    const updatedCommunity = await Community.findByIdAndUpdate(
       { _id: community._id },
       {
         name,
-        slug,
-        logo_url,
+        username: slug,
+        image: logo_url,
       },
       { new: true }
     );
+
+    console.log("Community updated :", updatedCommunity);
 
     return;
   } catch (error: any) {
@@ -131,6 +134,7 @@ export const updateCommunityInfo = async (
 
 export const deleteCommunity = async (id: string) => {
   try {
+    await connectToDb();
     const community = await Community.findOne({ id: id });
     if (!community)
       return NextResponse.json({ message: "Community not found" });
@@ -152,4 +156,60 @@ export const fetchAllCommunity = async (path?: string) => {
   } catch (error: any) {
     console.log("Failed to fetch community" + error.message);
   }
+};
+
+export const fetchCommunityById = async (communityId: string) => {
+  try {
+    await connectToDb();
+    const community = await Community.findOne({ id: communityId })
+      .populate({
+        path: "threads",
+        model: Thread,
+      })
+      .populate({
+        path: "members",
+        model: User,
+      });
+
+    if (!community) return console.log("Community not found");
+
+    return community;
+  } catch (error: any) {
+    console.log(`Failed to get community by id ${error.message} `);
+  }
+};
+
+export const fetchCommunityThreads = async (communityId: string) => {
+  try {
+    connectToDb();
+    const community = await Community.findOne({ id: communityId });
+    if (!community) return console.log("Community not found");
+
+    const threads = await Thread.find({
+      _id: { $in: community.threads },
+      parent: { $in: [null, undefined] },
+    })
+      .populate({
+        path: "author",
+        model: User,
+        select: "name image id",
+      })
+      .populate({
+        path: "community",
+        model: Community,
+        select: "name image id",
+      })
+      .populate({
+        path: "children",
+        model: Thread,
+        populate: {
+          path: "author",
+          model: User,
+          select: "name image id",
+        },
+      });
+    if (!threads) return console.log("Threads not found");
+
+    return threads;
+  } catch (error) {}
 };

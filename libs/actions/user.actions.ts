@@ -5,6 +5,8 @@ import { UserSchema } from "../../interface/schemaType";
 import { connectToDb } from "../../utils/mongoose";
 import User from "../model/user.model";
 import { FilterQuery, SortOrder } from "mongoose";
+import Community from "../model/community.model";
+import Thread from "../model/thread.model";
 
 export const updateUser = async (userData: UserSchema): Promise<void> => {
   try {
@@ -35,11 +37,16 @@ export const updateUser = async (userData: UserSchema): Promise<void> => {
 export const fetchUserById = async (userId: string) => {
   try {
     await connectToDb();
-    const user = await User.findOne({ id: userId });
-    // .populate({
-    //   path: "Community",
-    //   model: Community,
-    // });
+    const user = await User.findOne({ id: userId })
+      .populate({
+        path: "community",
+        model: Community,
+        select: "name image id",
+      })
+      .populate({
+        path: "threads",
+        model: Thread,
+      });
     if (!user) return null;
     return user;
   } catch (error: any) {

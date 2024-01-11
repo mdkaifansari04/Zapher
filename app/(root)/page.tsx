@@ -14,6 +14,7 @@ const Home = async () => {
   }
 
   const response = await fetchAllThreads(1, 10);
+
   return (
     <main className="overflow-y-auto">
       <h1 className="text-heading2-bold font-montserrat"> Home</h1>

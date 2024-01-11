@@ -11,7 +11,7 @@ const montserrat = Montserrat({
   weight: ["400", "500"],
   variable: "--font-montserrat",
 });
-import "../styles/global.css";
+import "../../styles/global.css";
 import { APP_NAME, APP_DESCRIPTION } from "../../constants/index";
 
 export const metadata: Metadata = {
