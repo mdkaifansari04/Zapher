@@ -3,6 +3,7 @@ import { fetchUserById } from "../../libs/actions/user.actions";
 import { redirect } from "next/navigation";
 import { fetchAllThreads } from "../../libs/actions/thread.actions";
 import ThreadCard from "../../components/cards/threadCard";
+import { ThreadSkeleton } from "../../components/cards/skeletonCard";
 
 const Home = async () => {
   const user = await currentUser();

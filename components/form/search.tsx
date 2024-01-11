@@ -67,7 +67,7 @@ function SearchBar({
       <form
         onSubmit={form.handleSubmit(onSubmit)}
         className={clx(
-          "space-y-8 flex items-center justify-between gap-3 bg-dark-7 px-5 py-2 rounded-full",
+          "space-y-8 flex items-center justify-between gap-3 bg-dark-7 px-4 py-[0.1rem] md:px-5 md:py-2 rounded-full",
           className
         )}
       >

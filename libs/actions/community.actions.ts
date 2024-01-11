@@ -22,7 +22,7 @@ export const createCommunity = async (
       id,
       name,
       username,
-      bio: bio ? bio : "Org bio",
+      bio: bio ? bio : `🌐 Welcome to ${name} ! 🚀`,
       image,
       createdBy: user._id,
     });
@@ -149,7 +149,16 @@ export const fetchAllCommunity = async (path?: string) => {
   try {
     await connectToDb();
 
-    const community = await Community.find({});
+    const community = await Community.find({})
+      .populate({
+        path: "members",
+        model: User,
+        select: "name image id",
+      })
+      .populate({
+        path: "threads",
+        model: Thread,
+      });
     if (!community) return console.log("Community not found");
     if (path) revalidatePath(path);
     return community;

@@ -4,6 +4,7 @@ import UserCard from "../cards/userCard";
 import { fetchUserById, fetchUsers } from "../../libs/actions/user.actions";
 import { redirect } from "next/navigation";
 import { currentUser } from "@clerk/nextjs";
+import CommunityCard from "../cards/communityCard";
 
 async function RightSidebar() {
   const user = await currentUser();
@@ -18,16 +19,29 @@ async function RightSidebar() {
   const users = response ? response?.users : [];
   const communities = await fetchAllCommunity();
   return (
-    <section className="hidden lg:flex custom-scrollbar-right border-[#27272A] !border-l-[0.001px] px-7 py-9 flex-col">
-      <div className="flex flex-1 justify-start">
+    <section className="hidden lg:flex custom-scrollbar-right border-[#27272A] !border-l-[0.001px] px-9 py-9 flex-col">
+      <div className="flex flex-col justify-start">
         <h1 className="text-2xl text-heading4-medium">Suggested Communities</h1>
 
-        {/* <div className="mt-3">{communities.map(() => {})}</div> */}
+        <div className="flex flex-col gap-2 mt-4">
+          {communities?.slice(0, 3).map((community: any) => (
+            <CommunityCard
+              key={community.id}
+              id={community.id}
+              bio={community.bio}
+              imgUrl={community.image}
+              name={community.name}
+              members={community.members}
+              username={community.username}
+              isRightSidebar
+            />
+          ))}
+        </div>
       </div>
-      <div className="flex flex-1 flex-col">
+      <div className="flex flex-1 flex-col mt-6">
         <h1 className="text-2xl text-heading4-medium">Similar Minds</h1>
-        <div className="flex flex-col gap-2 mt-10">
-          {users?.map((user) => (
+        <div className="flex flex-col gap-2 mt-4">
+          {users?.slice(0, 3).map((user) => (
             <UserCard
               name={user.name}
               username={user.username}
