@@ -175,7 +175,7 @@ module.exports = withUt({
     },
     extend: {
       colors: {
-        "primary-500": "#080A0D;",
+        "primary-500": "#080A0D",
         "secondary-500": "#121417",
         blue: "#0095F6",
         primary: "#14B8A6",
