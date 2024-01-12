@@ -55,8 +55,8 @@ export const fetchAllThreads = async (currentPage = 1, pageSize = 10) => {
       parent: { $in: [null, undefined] },
     })
       .sort({ createdAt: "desc" })
-      .skip(skipAmount)
-      .limit(pageSize)
+      // .skip(skipAmount)
+      // .limit(pageSize)
       .populate({
         path: "author",
         model: User,
