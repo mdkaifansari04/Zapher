@@ -1,6 +1,6 @@
 # Zapher - Your Hub for Interactive Discussions
 
-[![Zapher Banner](.github/assets/Zapher-cover.png)](https://github.com/mdkaifansari04/Zapher)
+[![Zapher Banner](.github/assets/mainBanner.png)](https://github.com/mdkaifansari04/Zapher)
 
 Zapher is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, Zapher has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
 
