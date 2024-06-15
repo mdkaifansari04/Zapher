@@ -1,61 +1,153 @@
+# Zypher 🌐💬
 
-# Zypher
-Zypher a dynamic web application, brings discussions to life with Next.js 14, MongoDB, and Clerk for authentication. Evolving from a messy inception, the project showcases optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions! 💬🌐 #WebDev #NextJS #MongoDB #Clerk #Engagement 🚀✨
+[![Zypher Banner](.github/assets/zypher-cover.png)](https://github.com/your-username/zypher)
 
-### Tech Stack Tags
+Zypher is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, Zypher has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
 
-![Next.js](https://img.shields.io/badge/Next.js-14-blue?style=flat-square&logo=next.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-4.4-green?style=flat-square&logo=mongodb)
-![Clerk](https://img.shields.io/badge/Clerk-Authentication-orange?style=flat-square)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-2.2.19-blueviolet?style=flat-square&logo=tailwind-css)
+## ⚡ Project Status
 
-### Project Tags
+<div align="center">
 
-![Web Development](https://img.shields.io/badge/Web_Development-fff?style=flat-square&logo=web)
-![Discussion Platform](https://img.shields.io/badge/Discussion_Platform-ccc?style=flat-square&logo=chat)
+![GitHub contributors](https://img.shields.io/github/contributors/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![license MIT](https://img.shields.io/github/license/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![Stargazers](https://img.shields.io/github/stars/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![Forks](https://img.shields.io/github/forks/your-username/zypher?style=for-the-badge&color=%23f02e65)
 
-### Code Evolution
+![GitHub Open issues](https://img.shields.io/github/issues/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed/your-username/zypher?style=for-the-badge&color=%23f02e65)
 
-![Optimized Architecture](https://img.shields.io/badge/Optimized_Architecture-ccc?style=flat-square)
-![Polished Code](https://img.shields.io/badge/Polished_Code-ccc?style=flat-square)
-![Sleek UI](https://img.shields.io/badge/Sleek_UI-ccc?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub top language](https://img.shields.io/github/languages/top/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub Release](https://img.shields.io/github/v/release/your-username/zypher?style=for-the-badge&color=%23f02e65)
 
+[![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%23f02e65.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-discord-invite)
 
+</div>
 
+## 🏆 Featured in:
 
+<table>
+    <tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+    </tr>
+    <tr>
+        <td><img src=".github/assets/gssoc24.png" width="200" height="auto" loading="lazy" alt="GSSoC 24"/></td>
+        <td>GirlScript Summer of Code 2024</td>
+        <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development. <a href="docs/gssoc.md">Click here</a> to get the guidelines.  </td>
+    </tr>
+    <tr>
+      <td><img src=".github/assets/iwoc-banner.png" width="200" height="auto" loading="lazy" alt="IWOC 24" /></td>
+      <td>Innogeeks Winter of Code 2024</td>
+      <td>Innogeeks Winter of Code is a month-long open-source program envisioned by the Innogeeks. It is an online initiative that introduces new contributors to open-source software development. <a href="docs/iwoc.md">Click here</a> to get the guidelines. </td>
+    </tr>
+    <tr>
+      <td><img src=".github/assets/swoc-banner.png" width="200" height="auto" loading="lazy" alt="SWOC 24" /></td>
+      <td>Social Winter of Code 2024</td>
+      <td>Social Winter of Code is a 2-month-long open-source program envisioned by Social. It aims to bring students into the world of open-source development and see the power of unified problem-solving in real-time. <a href="docs/swoc.md">Click here</a> to get the guidelines. </td>
+    </tr>
+    <tr>
+      <td><img src=".github/assets/hacktoberfest-banner.png" width="200" height="auto" loading="lazy" alt="Hacktoberfest 2023" /></td>
+      <td>Hacktoberfest 2023</td>
+      <td>Hacktoberfest is a month-long October event welcoming all skill levels to join the open-source community, contribute quality pull requests on GitHub, and earn cool swag.</td>
+    </tr>
+</table>
 
+## Table of Contents
 
-## Getting Started
+- [Why Open Source?](#-why-open-source)
+- [Tech Stack](#-tech-stack)
+- [Live Demo](#live-demo-)
+- [Introduction](#-introduction)
+- [What does it do?](#-what-does-it-do)
+  - [Features](#features)
+  - [Benefits](#benefits)
+- [License](#%EF%B8%8F-license)
+- [How to Contribute?](#-how-to-contribute)
+  - [Setup](#setup)
+- [Top Contributors](#-top-contributors)
+- [Support](#-support)
 
-First, run the development server:
+## 🤔 Why Open Source?
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Contributing to open source provides immense opportunities to work on diverse projects and with various mentors, gaining unique insights and ideas. It’s a platform where contributors grow together with a constructive and positive attitude.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This repository aims to provide such a platform, allowing contributors to bring innovative ideas for interactive discussions and make our application better.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h5 align="center"><i>If you like the project, please <a href="https://github.com/your-username/zypher/stargazers">★</a> this repository to show your support! 🤩</i></h5>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 💻 Tech Stack
 
-## Learn More
+- [Next.js 14](https://nextjs.org) - A React framework for building web applications with server-side rendering.
+- [MongoDB](https://www.mongodb.com) - A NoSQL database for modern web applications.
+- [Clerk](https://clerk.dev) - User management and authentication service.
+- [Tailwind CSS](https://tailwindcss.com) - A utility-first CSS framework for rapidly building custom user interfaces.
 
-To learn more about Next.js, take a look at the following resources:
+## Live Demo 💻
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Visit [Zypher Live](https://zypher.vercel.app) to see the live demo!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Demo Credentials to test the application:
 
-## Deploy on Vercel
+| Email Address      | Password         |
+|--------------------|------------------|
+| demo@example.com   | DemoPassword123  |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 👋 Introduction
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Zypher is a social media platform designed for seamless and interactive discussions. Leveraging modern web technologies, it provides users with a sleek interface and robust functionality for community building and engagement.
+
+![intro](.github/assets/intro.png)
+
+## 🔨 What does it do?
+
+Zypher enables users to create and participate in vibrant communities. Users can share their thoughts, post updates, and engage in meaningful conversations. The platform supports various features to enhance user experience and foster engagement.
+
+### Features
+
+- **User Authentication**: Secure authentication using Clerk.
+- **Responsive Design**: Fully mobile-responsive to ensure accessibility across devices.
+- **User Search**: Easily find and connect with other users.
+- **Notifications**: Stay updated with activities in the notification tab.
+- **Community Creation**: Create communities, assign admin roles, and invite users via email.
+- **Profile Management**: View and manage your posts, activities, and more in your profile tab.
+- **Content Interaction**: Create posts, comment on others’ posts, and explore different communities.
+
+### Benefits
+
+- **Enhanced Connectivity**: Connect and interact with like-minded individuals.
+- **Improved Collaboration**: Collaborate within communities to share ideas and insights.
+- **User-Friendly Interface**: An intuitive and polished user interface for a seamless experience.
+- **Growth Opportunities**: Engage with a wider audience and grow your network.
+
+## 🛡️ License
+
+Zypher is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤔 How to Contribute?
+
+Contributing to open-source software (OSS) projects is a rewarding experience. It allows you to learn new skills and make valuable contributions to the community.
+
+- Read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+- Follow the [Git Workflow](docs/git.md) for best practices.
+- Check the [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
+- Create an [issue](https://github.com/your-username/zypher/issues) to report bugs or suggest new features.
+- Ensure your commits have descriptive messages.
+
+### Setup
+
+- [Setting up a development environment](docs/setup.md)
+- [Setting up Clerk](docs/clerk.md)
+
+## ✨ Top Contributors
+
+A big thank you to our top contributors who have significantly improved Zypher. Your hard work and dedication are truly appreciated! 🌟😄
+
+[![Contributors](https://contrib.rocks/image?repo=your-username/zypher)](https://github.com/your-username/zypher/graphs/contributors)
+
+## 🙏🏽 Support
+
+This project needs your support! Please star 🌟 this repository to show your appreciation.
