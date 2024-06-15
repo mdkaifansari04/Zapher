@@ -1,22 +1,42 @@
----
-name: "Bug report \U0001F41E"
-about: Create a bug report
-labels: bug
+# Bug Report
+
+## Summary
+
+<!-- Provide a concise description of the bug. -->
+
+## Steps to Reproduce
+
+<!-- Provide a step-by-step description of how to reproduce the bug. Include code snippets, screenshots, or any other relevant information. -->
+
+1. 
+2. 
+3. 
+
+## Expected Behavior
+
+<!-- Describe what you expected to happen. -->
+
+## Actual Behavior
+
+<!-- Describe what actually happened. -->
+
+## Environment
+
+<!-- Provide details about your environment. Include the following information: -->
+- **OS**: [e.g., Windows 10, macOS 11.2, Ubuntu 20.04]
+- **Browser**: [e.g., Chrome 91, Firefox 89]
+- **Node.js Version**: [e.g., 14.17.0]
+- **Next.js Version**: [e.g., 14]
+- **Clerk Version**: [e.g., 3.0.4]
+
+## Additional Context
+
+<!-- Include any other context or information that may be relevant to the bug. -->
+
+## Possible Solution
+
+<!-- If you have an idea of how to fix the bug, please describe it here. -->
 
 ---
 
-## Describe the bug
-A clear and concise description of what the bug is.
-
-### Steps to reproduce
-Steps to reproduce the behavior.
-
-### Expected behavior
-A clear and concise description of what you expected to happen.
-
-### Environment
- - OS: [e.g. Arch Linux]
- - Other details that you think may affect.
-
-### Additional context
-Add any other context about the problem here.
+**Note:** The project maintainers will review this bug report and prioritize it based on its impact and severity. Please provide as much detail as possible to facilitate the review process.
