@@ -1,4 +1,4 @@
-# Zapher 🌐💬
+# Zapher - Your Hub for Interactive Discussions
 
 [![Zapher Banner](.github/assets/Zapher-cover.png)](https://github.com/mdkaifansari04/Zapher)
 
