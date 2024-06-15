@@ -1,26 +1,26 @@
-# Zypher 🌐💬
+# Zapher 🌐💬
 
-[![Zypher Banner](.github/assets/zypher-cover.png)](https://github.com/mdkaifansari04/Zapher)
+[![Zapher Banner](.github/assets/Zapher-cover.png)](https://github.com/mdkaifansari04/Zapher)
 
-Zypher is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, Zypher has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
+Zapher is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, Zapher has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
 
 ## ⚡ Project Status
 
 <div align="center">
 
-![GitHub contributors](https://img.shields.io/github/contributors/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![license MIT](https://img.shields.io/github/license/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![Stargazers](https://img.shields.io/github/stars/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![Forks](https://img.shields.io/github/forks/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub contributors](https://img.shields.io/github/contributors/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![license MIT](https://img.shields.io/github/license/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![Stargazers](https://img.shields.io/github/stars/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![Forks](https://img.shields.io/github/forks/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
 
-![GitHub Open issues](https://img.shields.io/github/issues/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub Open issues](https://img.shields.io/github/issues/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![GitHub top language](https://img.shields.io/github/languages/top/your-username/zypher?style=for-the-badge&color=%23f02e65)
-![GitHub Release](https://img.shields.io/github/v/release/your-username/zypher?style=for-the-badge&color=%23f02e65)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub top language](https://img.shields.io/github/languages/top/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub Release](https://img.shields.io/github/v/release/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
 
 [![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%23f02e65.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-discord-invite)
 
@@ -88,7 +88,7 @@ This repository aims to provide such a platform, allowing contributors to bring 
 
 ## Live Demo 💻
 
-### Visit [Zypher Live](https://zypher.vercel.app) to see the live demo!
+### Visit [Zapher Live](https://Zapher.vercel.app) to see the live demo!
 
 ### Demo Credentials to test the application:
 
@@ -98,13 +98,13 @@ This repository aims to provide such a platform, allowing contributors to bring 
 
 ## 👋 Introduction
 
-Zypher is a social media platform designed for seamless and interactive discussions. Leveraging modern web technologies, it provides users with a sleek interface and robust functionality for community building and engagement.
+Zapher is a social media platform designed for seamless and interactive discussions. Leveraging modern web technologies, it provides users with a sleek interface and robust functionality for community building and engagement.
 
 ![intro](.github/assets/intro.png)
 
 ## 🔨 What does it do?
 
-Zypher enables users to create and participate in vibrant communities. Users can share their thoughts, post updates, and engage in meaningful conversations. The platform supports various features to enhance user experience and foster engagement.
+Zapher enables users to create and participate in vibrant communities. Users can share their thoughts, post updates, and engage in meaningful conversations. The platform supports various features to enhance user experience and foster engagement.
 
 ### Features
 
@@ -125,7 +125,7 @@ Zypher enables users to create and participate in vibrant communities. Users can
 
 ## 🛡️ License
 
-Zypher is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Zapher is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤔 How to Contribute?
 
@@ -144,9 +144,9 @@ Contributing to open-source software (OSS) projects is a rewarding experience. I
 
 ## ✨ Top Contributors
 
-A big thank you to our top contributors who have significantly improved Zypher. Your hard work and dedication are truly appreciated! 🌟😄
+A big thank you to our top contributors who have significantly improved Zapher. Your hard work and dedication are truly appreciated! 🌟😄
 
-[![Contributors](https://contrib.rocks/image?repo=your-username/zypher)](https://github.com/mdkaifansari04/Zapher/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=mdkaifansari04/Zapher)](https://github.com/mdkaifansari04/Zapher/graphs/contributors)
 
 ## 🙏🏽 Support
 
