@@ -27,7 +27,7 @@ Zapher is a dynamic web application that brings discussions to life using cuttin
 ## Table of Contents
 
 - [Why Open Source?](#-why-open-source)
-- [Tech Stack](#-tech-stack)
+- [Technology Used](#-technology-used)
 - [Live Demo](#live-demo-)
 - [Introduction](#-introduction)
 - [What does it do?](#-what-does-it-do)
@@ -47,7 +47,23 @@ This repository aims to provide such a platform, allowing contributors to bring 
 
 <h5 align="center"><i>If you like the project, please <a href="https://github.com/mdkaifansari04/Zapher/stargazers">★</a> this repository to show your support! 🤩</i></h5>
 
-## 💻 Tech Stack
+## 🚀 Technology Used
+
+<div align="center">
+  
+  ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+  ![Clerk](https://img.shields.io/badge/Clerk-512DA8?style=for-the-badge&logo=clerk&logoColor=white)
+  ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+  ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+  
+</div>
+
 
 - [Next.js 14](https://nextjs.org) - A React framework for building web applications with server-side rendering.
 - [MongoDB](https://www.mongodb.com) - A NoSQL database for modern web applications.
@@ -57,6 +73,9 @@ This repository aims to provide such a platform, allowing contributors to bring 
 ## Live Demo 💻
 
 ### Visit [Zapher Live](https://zapher.vercel.app/sign-in) to see the live demo!
+
+<br />
+<br />
 
 ## 👋 Introduction
 
