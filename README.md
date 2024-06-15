@@ -8,21 +8,21 @@ Zapher is a dynamic web application that brings discussions to life using cuttin
 
 <div align="center">
 
-![GitHub contributors](https://img.shields.io/github/contributors/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![license MIT](https://img.shields.io/github/license/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![Stargazers](https://img.shields.io/github/stars/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![Forks](https://img.shields.io/github/forks/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub contributors](https://img.shields.io/github/contributors/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![license MIT](https://img.shields.io/github/license/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![Stargazers](https://img.shields.io/github/stars/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![Forks](https://img.shields.io/github/forks/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
 
-![GitHub Open issues](https://img.shields.io/github/issues/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![GitHub Closed issues](https://img.shields.io/github/issues-closed/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![GitHub PR Open](https://img.shields.io/github/issues-pr/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![GitHub PR closed](https://img.shields.io/github/issues-pr-closed/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub Open issues](https://img.shields.io/github/issues/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![GitHub top language](https://img.shields.io/github/languages/top/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
-![GitHub Release](https://img.shields.io/github/v/release/mdkaifansari04/Zapher?style=for-the-badge&color=%23f02e65)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![GitHub top language](https://img.shields.io/github/languages/top/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
+![GitHub Release](https://img.shields.io/github/v/release/mdkaifansari04/Zapher?style=for-the-badge&color=%2356008C)
 
-[![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%23f02e65.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-discord-invite)
+[![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%2356008C.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-discord-invite)
 
 </div>
 
