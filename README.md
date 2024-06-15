@@ -1,6 +1,6 @@
 # Zypher 🌐💬
 
-[![Zypher Banner](.github/assets/zypher-cover.png)](https://github.com/your-username/zypher)
+[![Zypher Banner](.github/assets/zypher-cover.png)](https://github.com/mdkaifansari04/Zapher)
 
 Zypher is a dynamic web application that brings discussions to life using cutting-edge technologies such as Next.js 14, MongoDB, and Clerk for authentication. From its humble beginnings, Zypher has evolved into a robust platform featuring optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions!
 
@@ -77,7 +77,7 @@ Contributing to open source provides immense opportunities to work on diverse pr
 
 This repository aims to provide such a platform, allowing contributors to bring innovative ideas for interactive discussions and make our application better.
 
-<h5 align="center"><i>If you like the project, please <a href="https://github.com/your-username/zypher/stargazers">★</a> this repository to show your support! 🤩</i></h5>
+<h5 align="center"><i>If you like the project, please <a href="https://github.com/mdkaifansari04/Zapher/stargazers">★</a> this repository to show your support! 🤩</i></h5>
 
 ## 💻 Tech Stack
 
@@ -134,7 +134,7 @@ Contributing to open-source software (OSS) projects is a rewarding experience. I
 - Read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 - Follow the [Git Workflow](docs/git.md) for best practices.
 - Check the [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
-- Create an [issue](https://github.com/your-username/zypher/issues) to report bugs or suggest new features.
+- Create an [issue](https://github.com/mdkaifansari04/Zapher/issues) to report bugs or suggest new features.
 - Ensure your commits have descriptive messages.
 
 ### Setup
@@ -146,7 +146,7 @@ Contributing to open-source software (OSS) projects is a rewarding experience. I
 
 A big thank you to our top contributors who have significantly improved Zypher. Your hard work and dedication are truly appreciated! 🌟😄
 
-[![Contributors](https://contrib.rocks/image?repo=your-username/zypher)](https://github.com/your-username/zypher/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=your-username/zypher)](https://github.com/mdkaifansari04/Zapher/graphs/contributors)
 
 ## 🙏🏽 Support
 
