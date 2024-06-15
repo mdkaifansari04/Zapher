@@ -20,9 +20,7 @@ Zapher is a dynamic web application that brings discussions to life using cuttin
 
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mdkaifansari04/Zapher?style=for-the-badge&color=%2314B8A5)
 ![GitHub top language](https://img.shields.io/github/languages/top/mdkaifansari04/Zapher?style=for-the-badge&color=%2314B8A5)
-![GitHub Release](https://img.shields.io/github/v/release/mdkaifansari04/Zapher?style=for-the-badge&color=%2314B8A5)
-
-[![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%2314B8A5.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-discord-invite)
+[![Discord Community](https://img.shields.io/badge/Join-Discord_Community-%2314B8A5.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/qqnfcudX)
 
 </div>
 
@@ -58,7 +56,7 @@ This repository aims to provide such a platform, allowing contributors to bring 
 
 ## Live Demo 💻
 
-### Visit [Zapher Live](https://Zapher.vercel.app) to see the live demo!
+### Visit [Zapher Live](https://zapher.vercel.app/sign-in) to see the live demo!
 
 ## 👋 Introduction
 
