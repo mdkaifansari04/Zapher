@@ -1,6 +1,6 @@
 
-# Therads 
-ThreadClone, a dynamic web application, brings discussions to life with Next.js 14, MongoDB, and Clerk for authentication. Evolving from a messy inception, the project showcases optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions! 💬🌐 #WebDev #NextJS #MongoDB #Clerk #Engagement 🚀✨
+# Zypher
+Zypher a dynamic web application, brings discussions to life with Next.js 14, MongoDB, and Clerk for authentication. Evolving from a messy inception, the project showcases optimized architecture, polished code, and a sleek UI. Join the conversation seamlessly and explore the world of interactive discussions! 💬🌐 #WebDev #NextJS #MongoDB #Clerk #Engagement 🚀✨
 
 ### Tech Stack Tags
 
