@@ -64,7 +64,6 @@ This repository aims to provide such a platform, allowing contributors to bring 
   
 </div>
 
-
 - [Next.js 14](https://nextjs.org) - A React framework for building web applications with server-side rendering.
 - [MongoDB](https://www.mongodb.com) - A NoSQL database for modern web applications.
 - [Clerk](https://clerk.dev) - User management and authentication service.
@@ -81,7 +80,7 @@ This repository aims to provide such a platform, allowing contributors to bring 
 
 Zapher is a social media platform designed for seamless and interactive discussions. Leveraging modern web technologies, it provides users with a sleek interface and robust functionality for community building and engagement.
 
-![intro](https://dev.to/mdkaifansari04/zapher-hub-for-interactive-discussions-5h88)
+[![Zapher Banner](.github/assets/browser.png)](https://github.com/mdkaifansari04/Zapher)
 
 ## 🔨 What does it do?
 

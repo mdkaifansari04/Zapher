@@ -1,4 +1,4 @@
-export const APP_NAME = "Threads" as const;
+export const APP_NAME = "Zapher" as const;
 
 export const APP_DESCRIPTION =
   "Discover TwinTalks: the innovative thread clone platform that revolutionizes online discussions. Engage in mirrored conversations, explore parallel posts, and connect in a dynamic, duplicate dialogue environment. Experience a new realm of digital discourse with TwinTalks, where every conversation is a journey of discovery." as const;

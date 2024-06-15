@@ -38,7 +38,6 @@ export default function RootLayout({
     >
       <html lang="en">
         <Head>
-          {/* Other head elements */}
           <link
             rel="apple-touch-icon"
             sizes="180x180"
