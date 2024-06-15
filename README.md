@@ -26,36 +26,6 @@ Zapher is a dynamic web application that brings discussions to life using cuttin
 
 </div>
 
-## 🏆 Featured in:
-
-<table>
-    <tr>
-      <th>Event Logo</th>
-      <th>Event Name</th>
-      <th>Event Description</th>
-    </tr>
-    <tr>
-        <td><img src=".github/assets/gssoc24.png" width="200" height="auto" loading="lazy" alt="GSSoC 24"/></td>
-        <td>GirlScript Summer of Code 2024</td>
-        <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development. <a href="docs/gssoc.md">Click here</a> to get the guidelines.  </td>
-    </tr>
-    <tr>
-      <td><img src=".github/assets/iwoc-banner.png" width="200" height="auto" loading="lazy" alt="IWOC 24" /></td>
-      <td>Innogeeks Winter of Code 2024</td>
-      <td>Innogeeks Winter of Code is a month-long open-source program envisioned by the Innogeeks. It is an online initiative that introduces new contributors to open-source software development. <a href="docs/iwoc.md">Click here</a> to get the guidelines. </td>
-    </tr>
-    <tr>
-      <td><img src=".github/assets/swoc-banner.png" width="200" height="auto" loading="lazy" alt="SWOC 24" /></td>
-      <td>Social Winter of Code 2024</td>
-      <td>Social Winter of Code is a 2-month-long open-source program envisioned by Social. It aims to bring students into the world of open-source development and see the power of unified problem-solving in real-time. <a href="docs/swoc.md">Click here</a> to get the guidelines. </td>
-    </tr>
-    <tr>
-      <td><img src=".github/assets/hacktoberfest-banner.png" width="200" height="auto" loading="lazy" alt="Hacktoberfest 2023" /></td>
-      <td>Hacktoberfest 2023</td>
-      <td>Hacktoberfest is a month-long October event welcoming all skill levels to join the open-source community, contribute quality pull requests on GitHub, and earn cool swag.</td>
-    </tr>
-</table>
-
 ## Table of Contents
 
 - [Why Open Source?](#-why-open-source)
@@ -90,17 +60,11 @@ This repository aims to provide such a platform, allowing contributors to bring 
 
 ### Visit [Zapher Live](https://Zapher.vercel.app) to see the live demo!
 
-### Demo Credentials to test the application:
-
-| Email Address      | Password         |
-|--------------------|------------------|
-| demo@example.com   | DemoPassword123  |
-
 ## 👋 Introduction
 
 Zapher is a social media platform designed for seamless and interactive discussions. Leveraging modern web technologies, it provides users with a sleek interface and robust functionality for community building and engagement.
 
-![intro](.github/assets/intro.png)
+![intro](https://dev.to/mdkaifansari04/zapher-hub-for-interactive-discussions-5h88)
 
 ## 🔨 What does it do?
 
