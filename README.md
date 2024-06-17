@@ -34,8 +34,8 @@ Zapher is a dynamic web application that brings discussions to life using cuttin
     </tr>
     <tr>
         <td><img src=".github/assets/image.png" width="200" height="auto" loading="lazy" alt="GSSoC 24"/></td>
-        <td>GirlScript Summer of Code 2024</td>
-        <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development. <a href="docs/gssoc.md">Click here</a> to get the guidelines.  </td>
+        <td>Vinyasa Summer of Code 2024</td>
+        <td>Vinyasa Summer of Code is an immersive program designed to elevate your coding skills and provide hands-on experience with real-world open-source projects. Collaborate with experienced mentors, build an impressive portfolio, and become a vital part of a vibrant coding community. <a href="https://vinyasa-summer-of-code-vsoc.devfolio.co/">Click here</a> to get the guidelines.</td>
     </tr>
 </table>
 
