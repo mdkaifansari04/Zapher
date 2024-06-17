@@ -24,6 +24,21 @@ Zapher is a dynamic web application that brings discussions to life using cuttin
 
 </div>
 
+## 🏆 Featured in:
+
+<table>
+    <tr>
+      <th>Event Logo</th>
+      <th>Event Name</th>
+      <th>Event Description</th>
+    </tr>
+    <tr>
+        <td><img src=".github/assets/vsoc.png" width="200" height="auto" loading="lazy" alt="GSSoC 24"/></td>
+        <td>GirlScript Summer of Code 2024</td>
+        <td>GirlScript Summer of Code is a three-month-long Open Source Program conducted every summer by GirlScript Foundation. It is an initiative to bring more beginners to Open-Source Software Development. <a href="docs/gssoc.md">Click here</a> to get the guidelines.  </td>
+    </tr>
+</table>
+
 ## Table of Contents
 
 - [Why Open Source?](#-why-open-source)
