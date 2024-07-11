@@ -12,6 +12,8 @@ import {
   DrawerTrigger,
 } from "../ui/drawer";
 import CreateThreadForm from "../form/createThreadForm";
+import LikeThread from "../shared/likeThread";
+import { likedThread } from "../../libs/actions/thread.actions";
 interface CardProp {
   id: string;
   currentUserId: string;
@@ -30,9 +32,10 @@ interface CardProp {
   createdAt: string;
   comments: [any];
   isComment?: boolean;
+  likes: number;
 }
 
-function ThreadCard({
+async function ThreadCard({
   id,
   currentUserId,
   parentId,
@@ -42,6 +45,7 @@ function ThreadCard({
   createdAt,
   comments,
   isComment,
+  likes
 }: CardProp) {
   let commentProfile: string[] = [];
 
@@ -52,6 +56,8 @@ function ThreadCard({
       }
     });
   }
+
+  const liked = await likedThread(id, currentUserId);
 
   return (
     <div
@@ -109,13 +115,12 @@ function ThreadCard({
             </p>
             <div className={`${isComment && "mb-10"} mt-5 flex flex-col gap-2`}>
               <div className="flex gap-3.5">
-                <FadeImg
-                  src="/assets/heart-gray.svg"
-                  alt="heart"
-                  width={24}
-                  height={24}
-                  className="cursor-pointer object-contain"
-                />
+
+                <div className="flex gap-2">
+                  <LikeThread threadId={id.toString()} userId={currentUserId.toString()} liked={liked} />
+                  {likes > 0 && <p className="text-md text-light-4">{likes}</p>}
+                </div>
+
                 <Link href={`/thread/${id}`}>
                   <FadeImg
                     src="/assets/reply.svg"
