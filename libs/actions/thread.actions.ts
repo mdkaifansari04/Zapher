@@ -4,6 +4,8 @@ import { connectToDb } from "../../utils/mongoose";
 import Thread from "../model/thread.model";
 import User from "../model/user.model";
 import Community from "../model/community.model";
+import mongoose from "mongoose";
+import { fetchUserById } from "./user.actions";
 
 interface ThreadProp {
   text: string;
@@ -235,3 +237,42 @@ export const getActivity = async (userId: string) => {
     console.log("Failed to fetch activity :" + error.message);
   }
 };
+
+export const likeThread = async (threadId: string, userId: string) => {
+  try {
+    const thread = await Thread.findOne({ _id: threadId });
+
+    console.log(thread)
+
+    if (!thread) return new Error("Thread not found");
+
+    if (thread.likedBy.includes(userId)) {
+      thread.likedBy = thread.likedBy.filter((id: string) => id !== userId);
+      thread.likes -= 1;
+      await thread.save();
+      revalidatePath(`/thread/${threadId}`);
+      return;
+    }
+
+    thread.likedBy.push(userId);
+    thread.likes += 1;
+    await thread.save();
+
+    revalidatePath(`/thread/${threadId}`);
+    
+  } catch (error: any) {
+    console.log("Failed to like the thread :" + error.message);
+  }
+}
+
+export const likedThread = async (threadId: string, userId: string) => {
+  try {
+    const thread = await Thread.findOne({ _id: threadId });
+    if (!thread) return new Error("Thread not found");
+    
+    return thread.likedBy.includes(userId)
+
+  } catch (error: any) {
+    console.log("Failed to like the thread :" + error.message);
+  }
+}
